@@ -4,7 +4,6 @@
     "scripts": {
         "dev": "turbo run dev",
         "test": "jest",
-        "postinstall": "prisma generate",
         "build": "prisma generate && turbo run build"
     },
     "devDependencies": {

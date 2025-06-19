@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-   "dev": "prisma generate --schema=src/prisma/schema.prisma && uvicorn src.main:app --reload",
+    "dev": "cross-env USERPROFILE=C:/Users/tinma prisma generate --schema=src/prisma/schema.prisma && uvicorn src.main:app --reload",
     "build": ""
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "prisma": "^5.17.0"
   }
 }

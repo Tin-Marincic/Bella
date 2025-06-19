@@ -18,7 +18,8 @@ from pathlib import Path
 from googleapiclient.errors import HttpError
 from mangum import Mangum
 
-os.environ['USERPROFILE'] = str(Path('C:/Users/tinma')) 
+if 'USERPROFILE' not in os.environ:
+    os.environ['USERPROFILE'] = str(Path('C:/Users/tinma'))
 
 from prisma import Prisma
 prisma = Prisma()
