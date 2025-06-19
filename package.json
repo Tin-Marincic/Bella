@@ -3,7 +3,6 @@
     "private": true,
     "scripts": {
         "dev": "turbo run dev",
-        "test": "jest",
         "build": "prisma generate && turbo run build"
     },
     "devDependencies": {
